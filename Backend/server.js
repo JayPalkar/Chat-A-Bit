@@ -4,6 +4,8 @@ import cookieParser from "cookie-parser";
 
 import authRoutes from "./Routes/auth.routes.js";
 import messageRoutes from "./Routes/message.routes.js";
+import userRoutes from "./Routes/user.routes.js";
+
 import connect from "./DB/connect.js";
 
 const app = express();
@@ -17,6 +19,7 @@ app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/message", messageRoutes);
+app.use("/api/users", userRoutes);
 
 // app.get("/", (req, res) => {
 //   //root route
