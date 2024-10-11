@@ -58,13 +58,20 @@ const Login = () => {
               type={isVisible ? "text" : "password"}
               placeholder="Enter Password"
             />
-            <button className="text-primary" onClick={handlePassword}>
+            <motion.button
+              whileTap={{ scale: 0.83 }}
+              className="text-primary"
+              onClick={handlePassword}
+            >
               {isVisible ? <FiEye /> : <FiEyeOff />}
-            </button>
+            </motion.button>
           </div>
-          <button className="bg-primary py-2 px-2 rounded-lg text-white font-bold text-xl hover:bg-blue-600">
+          <motion.button
+            whileTap={{ scale: 0.83 }}
+            className="bg-primary py-2 px-2 rounded-lg text-white font-bold text-xl hover:bg-blue-600"
+          >
             Log in
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>
