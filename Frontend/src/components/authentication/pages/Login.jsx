@@ -14,7 +14,7 @@ const Login = () => {
   return (
     <div className="flex h-screen justify-center">
       <div className="imgContainer bg-primary w-full flex flex-col justify-center items-center">
-        <div className="z-10 absolute top-60 flex justify-center items-center flex-col gap-6">
+        <div className="z-10 top-60 flex justify-center items-center flex-col gap-6">
           <motion.p
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
@@ -40,7 +40,7 @@ const Login = () => {
             duration: 1,
             ease: easeInOut,
           }}
-          className="absolute top-80 w-[580px] select-none"
+          className="relative top-180 w-[580px] select-none"
           src={bgImg}
           alt=""
         />
