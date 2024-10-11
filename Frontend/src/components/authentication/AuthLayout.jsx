@@ -21,15 +21,26 @@ const AuthLayout = () => {
   const handleToggle = () => {
     if (signupActive) {
       scrollToLogin();
+      localStorage.setItem("activeSection", "login");
     } else {
       scrollToSignup();
+      localStorage.setItem("activeSection", "signup");
     }
     setSignupActive(!signupActive);
   };
 
   useEffect(() => {
-    scrollToLogin();
+    const savedSection = localStorage.getItem("activeSection");
+
+    if (savedSection === "signup") {
+      scrollToSignup();
+      setSignupActive(true);
+    } else {
+      scrollToLogin();
+      setSignupActive(false);
+    }
   }, []);
+
   return (
     <div>
       <div id="loginSection" className="min-h-screen">
@@ -40,7 +51,7 @@ const AuthLayout = () => {
         <motion.button
           initial={{ rotate: 180 }}
           animate={{
-            y: signupActive ? 180 : -120,
+            y: signupActive ? 100 : -150,
             rotate: signupActive ? 180 : 0,
           }}
           whileHover={{ scale: 1.2 }}

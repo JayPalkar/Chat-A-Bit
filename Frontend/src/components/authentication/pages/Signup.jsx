@@ -50,6 +50,11 @@ const Signup = () => {
           <input
             className="outline-none w-96 text-primary py-2 px-2 border-primary border-2 rounded-lg text-xl"
             type="text"
+            placeholder="Enter Full Name"
+          />
+          <input
+            className="outline-none w-96 text-primary py-2 px-2 border-primary border-2 rounded-lg text-xl"
+            type="text"
             placeholder="Enter Username"
           />
           <input
