@@ -2,7 +2,7 @@
 import React from "react";
 
 const ChatBox = () => {
-  return <div>Checkbox</div>;
+  return <div>Chat Box</div>;
 };
 
 export default ChatBox;

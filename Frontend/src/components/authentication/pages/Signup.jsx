@@ -106,7 +106,6 @@ const Signup = () => {
             </div>
             <div className="flex items-center">
               <input
-                checked
                 id="default-radio-2"
                 type="radio"
                 value=""

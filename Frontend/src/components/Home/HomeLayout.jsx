@@ -13,10 +13,10 @@ const HomeLayout = () => {
           <NavBar />
         </div>
         <div className="flex ">
-          <div className="flex-auto">
+          <div className="flex">
             <SideBar />
           </div>
-          <div className="flex-auto">
+          <div className="flex flex-row">
             <ChatBox />
             <UserProfile />
           </div>
